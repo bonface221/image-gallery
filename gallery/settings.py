@@ -5,7 +5,7 @@ import cloudinary.api
 from dotenv import load_dotenv
 load_dotenv()
 import os
-import django_heroku
+
 import dj_database_url
 
 
@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
-django_heroku.settings(locals())
+
 
 MODE='prod'
 
