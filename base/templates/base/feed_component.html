@@ -1,0 +1,9 @@
+{% load static %}
+<section>
+	<div class="img-grid">
+		{% for image in images %}
+		<a href="{% url 'single' image.id%}"><img src="{{image.image.url}}" alt="" /></a>
+
+		{% endfor %}
+	</div>
+</section>
