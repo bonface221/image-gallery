@@ -89,8 +89,8 @@ if MODE=='dev':
         }
     }
 else:
-    DATABASES = dj_database_url.config(conn_max_age=600)
-
+    DATABASES = {}
+    DATABASES['default'] = dj_database_url.config(conn_max_age=600)
 
 
 # Password validation
