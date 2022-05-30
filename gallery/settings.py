@@ -20,7 +20,7 @@ MODE='prod'
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY="django-insecure-inj(+^)ry5bheg!ti#gmzeeg94wt1l%+ia0z8^5!-v_ga!idiu"
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 DISABLE_COLLECTSTATIC = 1
 
 ALLOWED_HOSTS = ['gallery221.herokuapp.com','127.0.0.1']
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 
 ROOT_URLCONF = 'gallery.urls'
