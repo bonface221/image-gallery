@@ -182,11 +182,12 @@ section .img-grid {
 	grid-template-columns: repeat(1, 1fr);
 	grid-gap: 5px;
 }
+
 section .img-grid img {
 	max-width: 100%;
 	height: 100%;
 }
-section .img-grid img:hover {
+section .img-grid img:hover{
 	opacity: 0.5;
 	cursor: pointer;
 }
@@ -381,6 +382,4 @@ section .image-details .contents .btn{
 	.contact form .inputBox input {
 		width: 100%;
 	}
-}
-@media (max-width: 763px) {
 }
