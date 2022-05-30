@@ -1,0 +1,34 @@
+{% load static %}
+<header>
+	<div id="menu" class="fas fa-bars"></div>
+	<a href="{% url 'home'%}" class="logo"><i class="fas fa-Q"></i>QualityX</a>
+	<nav class="navbar" id="nav">
+		<li><a href="{% url 'home' %}">home</a></li>
+		<li><a href="#">about</a></li>
+		<li>
+			<a>category <i class="fas fa-caret-down"></i></a>
+			<ul class="nav-dropdown">
+				{% for category in categories %}
+				<li><a href="{% url 'category' category.id%}">{{category.name}}</a></li>
+				{% endfor %}
+			</ul>
+		</li>
+		<li>
+			<a>location <i class="fas fa-caret-down"></i></a>
+			<ul class="nav-dropdown">
+				{% for location in locations %}
+				<li><a href="{% url 'location' location.id %}">{{location.name}}</a></li>
+				{% endfor %}
+			</ul>
+		</li>
+		<li><a href="#contact">contact</a></li>
+	</nav>
+	<div class="icons">
+		<i class="fas fa-search" id="search-icon"></i>
+		<a href="#" class="fas fa-heart"></a>
+	</div>
+	<form action="{% url 'home' %}" method="GET" id="search-box">
+		<input type="search" id="search" name="q" placeholder="search here" />
+		<label for="search" class="fas fa-search"></label>
+	</form>
+</header>
