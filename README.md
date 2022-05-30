@@ -12,7 +12,7 @@ QualityX is a photo gallery web application to showcase beautiful pictures. User
 - Admin can upload images from a django dashboard
 
 ## View Live Site here
-View the complete site [here](heroku.com)
+View the complete site [here](https://gallery221.herokuapp.com/)
 
 
 ## Technologies Used
