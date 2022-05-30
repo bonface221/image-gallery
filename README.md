@@ -23,8 +23,6 @@ View the complete site [here](https://gallery221.herokuapp.com/)
     - Postgressql
     - Heroku
 
-## Specifications
-To view the user dtories or BDD check the [specs file](specs.md).
 
 ### Prerequisite
 The Sunsplash project requires a prerequisite understanding of the following:
